@@ -1,0 +1,22 @@
+{ "name" : "guid"
+, "description" : "A Guid generator and validator."
+, "version" : "0.0.5"
+, "homepage" : "http://github.com/dandean/guid"
+, "author" : "Dan Dean <me@dandean.com> (http://dandean.com)"
+, "contributors" : []
+, "repository" :
+  { "type" : "git"
+  , "url" : "http://github.com/dandean/guid.git"
+  }
+, "bugs" :
+  { "mail" : "me@dandean.com"
+  , "web" : "http://github.com/dandean/guid/issues"
+  }
+, "main" : "guid"
+, "engines" : { "node" : ">=0.2.0" }
+, "licenses" :
+  [ { "type" : "MIT"
+    , "url" : "http://github.com/dandean/guid/raw/master/LICENSE"
+    }
+  ]
+}
