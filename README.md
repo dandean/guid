@@ -1,4 +1,4 @@
-# `Guid` lets you generate and validate unique identifiers.
+# Guid lets you generate and validate unique identifiers.
 
 Let's generate a new Guid instance.
 
@@ -47,3 +47,7 @@ Compare two Guid objects:
     
     guid.equals(new Guid('6fdf6ffc-ed77-94fa-407e-a7b86ed9e59d'));
     // -> true
+
+## Installation
+
+You can use npm to install guid: `npm install guid`
