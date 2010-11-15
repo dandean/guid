@@ -60,7 +60,7 @@ You can use npm to install guid: `npm install guid`
 
 ## But what if I need a UUID, not a GUID?
 
-There's also a [Uuid](https://github.com/dandean/uuid) library which has the
+There's also a [Uuid](https://github.com/dandean/uuid-lib) library which has the
 **exact** same functionality, but for UUID's:
-[https://github.com/dandean/uuid](https://github.com/dandean/uuid)
+[https://github.com/dandean/uuid-lib](https://github.com/dandean/uuid-lib)
 
