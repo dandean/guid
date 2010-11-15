@@ -56,4 +56,8 @@ Guid.create = function() {
   return new Guid([gen(2), gen(1), gen(1), gen(1), gen(3)].join("-"));
 };
 
+Guid.raw = function() {
+  return [gen(2), gen(1), gen(1), gen(1), gen(3)].join("-");
+};
+
 module.exports = Guid;
