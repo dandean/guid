@@ -60,4 +60,6 @@ Guid.raw = function() {
   return [gen(2), gen(1), gen(1), gen(1), gen(3)].join("-");
 };
 
-module.exports = Guid;
+if(typeof module != 'undefined' && module.exports) {
+  module.exports = Guid;
+}
