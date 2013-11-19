@@ -36,7 +36,7 @@
       "iphone": [ 6 ],
       "ipad": [ 6 ]
     },
-    "harness" : "mocha",
+    "harness" : "mocha-tdd",
     "files": "tests/*.js"
   }
 }
