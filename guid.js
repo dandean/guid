@@ -14,7 +14,7 @@ function Guid(guid) {
   this.value = Guid.EMPTY;
   
   if (guid && guid instanceof Guid) {
-    this.value = Guid.toString();
+    this.value = guid.toString();
 
   } else if (guid && Object.prototype.toString.call(guid) === "[object String]" && Guid.isGuid(guid)) {
     this.value = guid;

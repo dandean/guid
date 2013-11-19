@@ -28,7 +28,7 @@
   "testling": {
     "browsers": {
       "ie": [ 6, 7, 8, 9, 10 ],
-      "ff": [ 12, 13, 24, 25, "nightly" ],
+      "ff": [ 24, 25, "nightly" ],
       "chrome": [ 28, 29, 30, 31, "canary" ],
       "safari": [ "5.0.5", 5.1 ],
       "android-browser": [ 4.2 ],
