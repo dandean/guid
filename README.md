@@ -1,5 +1,7 @@
 # Guid lets you generate and validate unique identifiers.
 
+[![browser support](https://ci.testling.com/tommydudebreaux/guid.png)](https://ci.testling.com/tommydudebreaux/guid)
+
 In its simplest form, Guid lets you generate raw GUID formatted strings:
 
     Guid.raw();

@@ -8,10 +8,35 @@
     "type": "git",
     "url": "git://github.com/dandean/guid.git"
   },
-  "main": "./guid",
-  "licenses" :[{
-    "type" : "MIT",
-    "url" : "https://github.com/dandean/guid/raw/master/LICENSE"
+  "scripts": {
+    "test": "mocha -R spec -u tdd tests/*.js"
+  },
+  "contributors": [{
+      "name": "Tommy Messbauer"
   }],
-  "ender": "./ender.js"
+  "main": "./guid",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/dandean/guid/raw/master/LICENSE"
+    }
+  ],
+  "ender": "./ender.js",
+  "devDependencies": {
+    "mocha": "~1.14.0"
+  },
+  "testling": {
+    "browsers": {
+      "ie": [ 6, 7, 8, 9, 10 ],
+      "ff": [ 24, 25, "nightly" ],
+      "chrome": [ 28, 29, 30, 31, "canary" ],
+      "safari": [ "5.0.5", 5.1 ],
+      "android-browser": [ 4.2 ],
+      "opera": [ 17, "next" ],
+      "iphone": [ 6 ],
+      "ipad": [ 6 ]
+    },
+    "harness" : "mocha-tdd",
+    "files": "tests/*.js"
+  }
 }

@@ -11,42 +11,35 @@ function gen(count) {
 function Guid(guid) {
   if (!guid) throw new TypeError("Invalid argument; `value` has no value.");
     
-  var value = Guid.EMPTY;
+  this.value = Guid.EMPTY;
   
   if (guid && guid instanceof Guid) {
-    value = Guid.toString();
+    this.value = guid.toString();
 
   } else if (guid && Object.prototype.toString.call(guid) === "[object String]" && Guid.isGuid(guid)) {
-    value = guid;
+    this.value = guid;
   }
   
   this.equals = function(other) {
     // Comparing string `value` against provided `guid` will auto-call
     // toString on `guid` for comparison
-    return Guid.isGuid(other) && value == other;
+    return Guid.isGuid(other) && this.value == other;
   };
 
   this.isEmpty = function() {
-    return value === Guid.EMPTY;
+    return this.value === Guid.EMPTY;
   };
   
   this.toString = function() {
-    return value;
+    return this.value;
   };
   
   this.toJSON = function() {
-    return value;
+    return this.value;
   };
-  
-  Object.defineProperty(this, "value", {
-    get: function() { return value; },
-    enumerable: true
-  });
 };
 
-Object.defineProperty(Guid, "EMPTY", {
-  value: "00000000-0000-0000-0000-000000000000"
-});
+Guid.EMPTY = "00000000-0000-0000-0000-000000000000";
 
 Guid.isGuid = function(value) {
   return value && (value instanceof Guid || validator.test(value.toString()));
