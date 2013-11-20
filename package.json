@@ -2,7 +2,7 @@
   "author": "Dan Dean <@dandean> (http://dandean.com)",
   "name": "guid",
   "description": "A Guid generator and validator.",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "homepage": "https://github.com/dandean/guid",
   "repository": {
     "type": "git",
