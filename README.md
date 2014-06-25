@@ -1,4 +1,4 @@
-**NOTE:** @broofa's [node-uuid](https://github.com/broofa/node-uuid) module is **much** better than this implementation.
+**NOTE:** This creates GUID-like strings and not GUIDs. @broofa's [node-uuid](https://github.com/broofa/node-uuid) module is **much** better than this implementation.
 
 # Guid lets you generate and validate unique identifiers.
 
