@@ -23,7 +23,7 @@
   ],
   "ender": "./ender.js",
   "devDependencies": {
-    "mocha": "~1.14.0"
+    "mocha": "~3.2.0"
   },
   "testling": {
     "browsers": {
